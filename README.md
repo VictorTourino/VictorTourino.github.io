@@ -2,7 +2,7 @@
 
 Portfolio personal para presentar mi perfil, proyectos y experiencia a empresas que ofrezcan prácticas o un puesto junior de desarrollo de software.
 
-**Web publicada:** https://victortourino.github.io/
+**Web publicada:** https://victortourinoportfolio.github.io/
 
 ## Qué incluye
 
@@ -26,18 +26,7 @@ Portfolio personal para presentar mi perfil, proyectos y experiencia a empresas 
 - `index.html`: contenido y estructura de la página.
 - `styles.css`: estilos, tema claro y oscuro, y diseño responsive.
 - `script.js`: traducciones ES/EN, selector de idioma y enlaces configurables.
-- `docs/`: CV en PDF.
-- `imagenes/`: foto de perfil.
-
-## Cómo modificarlo
-
-- **Enlaces y datos de contacto:** edita el objeto `CONFIG` al principio de `script.js`.
-- **Textos:** cada texto traducible tiene un atributo `data-i18n` en el HTML. Su clave debe existir en los dos idiomas de `translations`, en `script.js`.
-- **CV:** sustituye el PDF de `docs/` y mantén el mismo nombre. Si lo renombras, actualiza `CONFIG.cv` y el `href` del botón.
-
-## Ejecutarlo en local
-
-No necesita instalación ni compilación. Abre `index.html` en el navegador. Para probarlo como en producción, sirve la carpeta con cualquier servidor estático, por ejemplo la extensión Live Server de VS Code.
+- `docs/`: CV en PDF y mi foto
 
 ## Contacto
 
