@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Víctor Touriño Fernández | Desarrollador Java / Backend Junior</title>
+    <meta name="description" content="Portfolio de Víctor Touriño Fernández, estudiante de 2º de DAM y desarrollador Java / Backend Junior.">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="container nav" aria-label="Principal">
+            <ul class="nav-links">
+                <li><a href="#proyectos" data-i18n="navProjects">Proyectos</a></li>
+                <li><a href="#experiencia" data-i18n="navExperience">Experiencia</a></li>
+                <li><a href="#stack" data-i18n="navStack">Stack</a></li>
+                <li><a href="#formacion" data-i18n="navEducation">Formación</a></li>
+                <li><a href="#contacto" data-i18n="navContact">Contacto</a></li>
+            </ul>
+            <div class="lang-switch">
+                <span class="lang-label" data-lang-label="es" aria-hidden="true">ES</span>
+                <button type="button" class="switch" id="lang-toggle" role="switch" aria-checked="false" aria-label="Idioma / Language: English">
+                    <span class="switch-thumb"></span>
+                </button>
+                <span class="lang-label" data-lang-label="en" aria-hidden="true">EN</span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero-wrap">
+            <div class="container hero">
+                <img class="photo" src="docs/foto_victor.jpg" alt="Foto de Víctor Touriño Fernández" width="180" height="180">
+                <div class="hero-text">
+                    <p class="badge"><span class="dot" aria-hidden="true"></span><span data-i18n="available">Disponible para prácticas</span></p>
+                    <h1>Víctor Touriño Fernández</h1>
+                    <p class="role" data-i18n="role">Desarrollador Java / Backend Junior</p>
+                    <div class="actions">
+                        <a class="btn btn-lg btn-primary" id="contact-link" href="#" data-i18n="ctaContact">Contactar</a>
+                        <a class="btn btn-lg btn-ghost" id="cv-link" href="docs/CV_Victor_Tourino_Fernandez.pdf" download="CV_Victor_Tourino_Fernandez.pdf" data-i18n="ctaCv">Descargar CV</a>
+                        <a class="btn btn-lg btn-ghost" id="github-link" href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <a class="btn btn-lg btn-ghost" id="linkedin-link" href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section id="busco" class="container">
+            <h2 data-i18n="seekTitle">Qué busco</h2>
+            <div class="card seek">
+                <div>
+                    <h3 data-i18n="seekRoleLabel">Puesto</h3>
+                    <p data-i18n="seekRole">Prácticas o puesto junior de desarrollador de software, con foco en Java / backend. Me adapto a otros stacks y tecnologías.</p>
+                </div>
+                <div>
+                    <h3 data-i18n="seekModeLabel">Modalidad</h3>
+                    <p data-i18n="seekMode">Remoto, híbrido o presencial en Castellón, Valencia y alrededores. Carné B y vehículo propio.</p>
+                </div>
+                <div>
+                    <h3 data-i18n="seekOfferLabel">Qué aporto</h3>
+                    <p data-i18n="seekOffer">Base sólida de Java y POO, proyectos propios y de equipo, y experiencia en pruebas de sistemas IoT con Docker.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="proyectos" class="container">
+            <h2 data-i18n="projectsTitle">Proyectos</h2>
+            <div class="grid">
+                <article class="card project">
+                    <h3 data-i18n="p2Title">App de pádel para ayuntamientos (TuPadel)</h3>
+                    <p data-i18n="p2Desc">Gestión de reservas de pistas de pádel, desarrollada como Trabajo Fin de Grado en equipo de 4 personas. Me encargo del backend en Java con Spring Boot y de las migraciones de la base de datos con Flyway.</p>
+                    <ul class="tags">
+                        <li>Java</li>
+                        <li>Spring Boot</li>
+                        <li>MySQL</li>
+                        <li>Flyway</li>
+                        <li>Git</li>
+                    </ul>
+                    <p class="status" data-i18n="p2Status">Trabajo en equipo · En curso</p>
+                    <div class="project-actions">
+                        <a class="btn btn-ghost" href="https://github.com/GnomesDevs/TuPadel" target="_blank" rel="noopener noreferrer"><span data-i18n="viewCode">Ver código</span><span class="sr-only"> - TuPadel</span></a>
+                    </div>
+                </article>
+
+                <article class="card project">
+                    <h3>gestion-usuarios-java-swing</h3>
+                    <p data-i18n="p3Desc">Aplicación CRUD de escritorio para gestionar usuarios de una base de datos MySQL. Incluye contraseñas con jBCrypt y prevención de inyección SQL.</p>
+                    <ul class="tags">
+                        <li>Java</li>
+                        <li>Swing</li>
+                        <li>JDBC</li>
+                        <li>MySQL</li>
+                        <li>jBCrypt</li>
+                    </ul>
+                    <p class="status" data-i18n="desktopStatus">Aplicación de escritorio</p>
+                    <div class="project-actions">
+                        <a class="btn btn-ghost" href="https://github.com/VictorTourino/gestion-usuarios-java-swing" target="_blank" rel="noopener noreferrer"><span data-i18n="viewCode">Ver código</span><span class="sr-only"> - gestion-usuarios-java-swing</span></a>
+                    </div>
+                </article>
+
+                <article class="card project">
+                    <h3>trading-transactions-tracker</h3>
+                    <p data-i18n="p4Desc">Aplicación de escritorio para la gestión CRUD de transacciones financieras, con una clase wrapper para el manejo del conector de MySQL.</p>
+                    <ul class="tags">
+                        <li>Java</li>
+                        <li>Swing</li>
+                        <li>JDBC</li>
+                        <li>MySQL</li>
+                    </ul>
+                    <p class="status" data-i18n="desktopStatus">Aplicación de escritorio</p>
+                    <div class="project-actions">
+                        <a class="btn btn-ghost" href="https://github.com/VictorTourino/trading-transactions-tracker" target="_blank" rel="noopener noreferrer"><span data-i18n="viewCode">Ver código</span><span class="sr-only"> - trading-transactions-tracker</span></a>
+                    </div>
+                </article>
+
+                <article class="card project">
+                    <h3>VirtuBroker</h3>
+                    <p data-i18n="p1Desc">Simulador de trading educativo. API REST de operaciones de compra y venta con datos reales de mercado de una API externa. Proyecto personal en desarrollo.</p>
+                    <ul class="tags">
+                        <li>Java</li>
+                        <li>Spring Boot</li>
+                        <li>MySQL</li>
+                        <li>API REST</li>
+                    </ul>
+                    <p class="status" data-i18n="p1Status">En desarrollo</p>
+                    <div class="project-actions">
+                        <span class="btn btn-disabled" aria-disabled="true" data-i18n="repoSoon">Repositorio próximamente</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="experiencia" class="container">
+            <h2 data-i18n="expTitle">Experiencia</h2>
+            <ol class="timeline">
+                <li class="timeline-item">
+                    <div class="timeline-date">
+                        <span data-i18n="exp2Date">Jun 2026 - Nov 2026</span>
+                        <span class="duration" data-i18n="exp2Dur">6 meses</span>
+                    </div>
+                    <article class="card">
+                        <h3 data-i18n="exp2Title">Técnico Informático Freelance</h3>
+                        <p class="meta"><span data-i18n="exp2Company">Autónomo</span> · Castellón</p>
+                        <p data-i18n="exp2Desc">Soporte técnico a clientes particulares.</p>
+                        <ul class="bullets">
+                            <li data-i18n="exp2b1">Soporte técnico, diagnóstico y reparación de hardware y software en PC y móviles.</li>
+                            <li data-i18n="exp2b2">Atención al cliente y gestión del tiempo.</li>
+                        </ul>
+                    </article>
+                </li>
+
+                <li class="timeline-item">
+                    <div class="timeline-date">
+                        <span data-i18n="exp1Date">Ene 2026 - Feb 2026</span>
+                        <span class="duration" data-i18n="exp1Dur">2 meses</span>
+                    </div>
+                    <article class="card">
+                        <h3 data-i18n="exp1Title">Técnico de Sistemas IoT y QA (Prácticas FCT)</h3>
+                        <p class="meta"><span data-i18n="exp1Company">Boreal Open Systems</span> · Castellón</p>
+                        <p data-i18n="exp1Desc">Prácticas FCT del Grado Superior (1º de DAM). Pruebas y monitorización de un sistema de actualizaciones remotas para dispositivos IoT.</p>
+                        <ul class="bullets">
+                            <li data-i18n="exp1b1">Monitorización del servidor de actualizaciones remotas (OTA) desplegado sobre Docker.</li>
+                            <li data-i18n="exp1b2">Pruebas de estrés (QA) y validación de fallos en placas Raspberry Pi Zero con Linux.</li>
+                            <li data-i18n="exp1b3">Trabajo bajo metodologías ágiles con Odoo ERP para la gestión de tareas y Slack para la comunicación.</li>
+                        </ul>
+                    </article>
+                </li>
+
+                <li class="timeline-item">
+                    <div class="timeline-date">
+                        <span data-i18n="exp3Date">Ago 2025 - Nov 2025</span>
+                        <span class="duration" data-i18n="exp3Dur">4 meses</span>
+                    </div>
+                    <article class="card">
+                        <h3 data-i18n="exp3Title">Camarero</h3>
+                        <p class="meta"><span data-i18n="exp3Company">Ágora</span> · Castellón</p>
+                        <p data-i18n="exp3Desc">Atención al cliente y trabajo en equipo en hostelería, con alta presión en horas punta.</p>
+                    </article>
+                </li>
+
+                <li class="timeline-item">
+                    <div class="timeline-date">
+                        <span data-i18n="exp4Date">Mar 2025 - Jun 2025</span>
+                        <span class="duration" data-i18n="exp4Dur">4 meses</span>
+                    </div>
+                    <article class="card">
+                        <h3 data-i18n="exp4Title">Técnico Informático (Prácticas FCT)</h3>
+                        <p class="meta"><span data-i18n="exp4Company">Centro Educativo Blasco Ibáñez</span> · Castellón</p>
+                        <p data-i18n="exp4Desc">Prácticas FCT del Grado Medio (SMR).</p>
+                        <ul class="bullets">
+                            <li data-i18n="exp4b1">Gestión y actualización de la base de datos de la biblioteca mediante software interno.</li>
+                        </ul>
+                    </article>
+                </li>
+            </ol>
+        </section>
+
+        <section id="stack" class="container">
+            <h2 data-i18n="stackTitle">Stack</h2>
+            <div class="stack-groups">
+                <div class="stack-group">
+                    <h3 data-i18n="stackLang">Lenguajes</h3>
+                    <ul class="stack-list">
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/java/java-original.svg" alt="" width="24" height="24" loading="lazy" onerror="this.hidden=true"><span>Java</span></li>
+                        <li><span>XML</span></li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/html5/html5-original.svg" alt="" width="24" height="24" loading="lazy" onerror="this.hidden=true"><span>HTML5</span></li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/css3/css3-original.svg" alt="" width="24" height="24" loading="lazy" onerror="this.hidden=true"><span>CSS3</span></li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/javascript/javascript-original.svg" alt="" width="24" height="24" loading="lazy" onerror="this.hidden=true"><span>JavaScript</span></li>
+                    </ul>
+                </div>
+
+                <div class="stack-group">
+                    <h3 data-i18n="stackBasic">Nociones básicas</h3>
+                    <ul class="stack-list">
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/python/python-original.svg" alt="" width="24" height="24" loading="lazy" onerror="this.hidden=true"><span>Python</span></li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/php/php-original.svg" alt="" width="24" height="24" loading="lazy" onerror="this.hidden=true"><span>PHP</span></li>
+                    </ul>
+                </div>
+
+                <div class="stack-group">
+                    <h3 data-i18n="stackFw">Frameworks</h3>
+                    <ul class="stack-list">
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/spring/spring-original.svg" alt="" width="24" height="24" loading="lazy" onerror="this.hidden=true"><span>Spring Boot</span></li>
+                    </ul>
+                </div>
+
+                <div class="stack-group">
+                    <h3 data-i18n="stackDb">Bases de datos</h3>
+                    <ul class="stack-list">
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/mysql/mysql-original.svg" alt="" width="24" height="24" loading="lazy" onerror="this.hidden=true"><span>MySQL</span></li>
+                        <li><span>MariaDB</span></li>
+                        <li><span>Oracle DB</span></li>
+                        <li><span>SQL</span></li>
+                    </ul>
+                </div>
+
+                <div class="stack-group">
+                    <h3 data-i18n="stackTools">Herramientas</h3>
+                    <ul class="stack-list">
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/git/git-original.svg" alt="" width="24" height="24" loading="lazy" onerror="this.hidden=true"><span>Git</span></li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/github/github-original.svg" alt="" width="24" height="24" loading="lazy" onerror="this.hidden=true"><span>GitHub</span></li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/docker/docker-original.svg" alt="" width="24" height="24" loading="lazy" onerror="this.hidden=true"><span>Docker</span></li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/linux/linux-original.svg" alt="" width="24" height="24" loading="lazy" onerror="this.hidden=true"><span>Linux</span></li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/intellij/intellij-original.svg" alt="" width="24" height="24" loading="lazy" onerror="this.hidden=true"><span>IntelliJ IDEA</span></li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/vscode/vscode-original.svg" alt="" width="24" height="24" loading="lazy" onerror="this.hidden=true"><span>VS Code</span></li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/androidstudio/androidstudio-original.svg" alt="" width="24" height="24" loading="lazy" onerror="this.hidden=true"><span>Android Studio</span></li>
+                        <li><span>Odoo ERP</span></li>
+                        <li><span>Slack</span></li>
+                        <li><span>Cisco Packet Tracer</span></li>
+                        <li><span>XAMPP</span></li>
+                        <li><span>MySQL Workbench</span></li>
+                    </ul>
+                </div>
+
+                <div class="stack-group">
+                    <h3 data-i18n="stackLibs">Librerías</h3>
+                    <ul class="stack-list">
+                        <li><span>Java Swing</span></li>
+                        <li><span>JDBC</span></li>
+                        <li><span>jBCrypt</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="formacion" class="container">
+            <h2 data-i18n="educationTitle">Formación</h2>
+            <div class="grid">
+                <article class="card">
+                    <h3 data-i18n="edu1Title">Grado Superior en Desarrollo de Aplicaciones Multiplataforma (DAM)</h3>
+                    <p class="meta" data-i18n="edu1Meta">DAVANTE MEDAC Castellón · 2025 - 2027 (en curso)</p>
+                </article>
+
+                <article class="card">
+                    <h3 data-i18n="edu2Title">Grado Medio en Sistemas Microinformáticos y Redes (SMR)</h3>
+                    <p class="meta" data-i18n="edu2Meta">IES El Caminás · 2023 - 2025</p>
+                </article>
+
+                <article class="card">
+                    <h3 data-i18n="edu3Title">Estudios profesionales de música</h3>
+                    <p class="meta" data-i18n="edu3Meta">Conservatorio de Música de Castellón · 2015 - 2022</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="idiomas" class="container">
+            <h2 data-i18n="langTitle">Idiomas y otros</h2>
+            <ul class="stack-list">
+                <li data-i18n="langNative">Español/Valenciano: nativo</li>
+                <li data-i18n="cert1">Inglés: nivel B2 (Cambridge)</li>
+                <li data-i18n="cert2">Carné de conducir (B) y vehículo propio</li>
+            </ul>
+        </section>
+
+        <section id="contacto" class="container">
+            <h2 data-i18n="contactTitle">Contacto</h2>
+            <ul class="contact-list">
+                <li><a id="email-link" href="#">touri.victor22@gmail.com</a></li>
+                <li><a href="tel:+34621059781">+34 621 05 97 81</a></li>
+                <li><a id="linkedin-link-2" href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                <li><a id="github-link-2" href="#" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            </ul>
+            <a class="btn btn-lg btn-primary" id="contact-link-2" href="#" data-i18n="ctaContact">Contactar</a>
+        </section>
+    </main>
+
+    <footer>
+        <p class="container" data-i18n="footer">Web desarrollada por Víctor Touriño Fernández, utilizando HTML, CSS y JavaScript.</p>
+    </footer>
+</body>
+</html>
