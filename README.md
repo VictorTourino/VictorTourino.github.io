@@ -2,7 +2,7 @@
 
 Portfolio personal para presentar mi perfil, proyectos y experiencia a empresas que ofrezcan prácticas o un puesto junior de desarrollo de software.
 
-**Web publicada:** https://victortourinoportfolio.github.io/
+**Web publicada:** [https://victortourinoportfolio.github.io/](https://victortourino.github.io/VictorTourinoPortfolio/)
 
 ## Qué incluye
 
